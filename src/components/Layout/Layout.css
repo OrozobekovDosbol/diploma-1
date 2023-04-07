@@ -10,9 +10,12 @@
 }
 .Layout header {
   grid-area: header;
+  display: flex;
+  background-color: rgb(200, 208, 214);
 }
 .Layout aside {
   grid-area: aside;
+  background-color: aquamarine;
 }
 .Layout main {
   grid-area: main;
@@ -24,3 +27,4 @@
 .Layout .logo {
   max-width: 100px;
 }
+

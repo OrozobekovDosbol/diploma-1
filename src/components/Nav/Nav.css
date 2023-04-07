@@ -1,3 +1,13 @@
 .Nav .NavItem a {
-  color: tomato;
+  color: black;
+}
+.Nav ul {
+  display: flex;
+}
+.Nav ul li {
+  list-style-type: none;
+}
+.Nav ul li a {
+  padding: 20px;
+  text-decoration: none;
 }
