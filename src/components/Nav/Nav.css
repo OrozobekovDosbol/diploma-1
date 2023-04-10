@@ -1,6 +1,9 @@
 .Nav .NavItem a {
   color: black;
 }
+.Nav .NavItem {
+  margin: 0 auto;
+}
 .Nav ul {
   display: flex;
 }
@@ -8,6 +11,8 @@
   list-style-type: none;
 }
 .Nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
   padding: 20px 60px;
   text-decoration: none;
 }

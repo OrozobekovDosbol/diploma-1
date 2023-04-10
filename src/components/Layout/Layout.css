@@ -11,11 +11,11 @@
 .Layout header {
   grid-area: header;
   display: flex;
-  background-color: rgb(226, 225, 225);
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .Layout aside {
   grid-area: aside;
-  background-color: rgb(226, 225, 225);
 }
 .Layout main {
   grid-area: main;
