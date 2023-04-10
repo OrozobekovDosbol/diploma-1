@@ -1,13 +1,13 @@
 import Nav from "../Nav/Nav";
-import Logo from "../Logo/Logo";
 import "./Layout.css";
 import CategoryList from "../CategoryList/Category";
+import Logo from "./Logo/Logo";
 
 export default function Layout(props) {
   return (
     <div className="Layout">
       <header>
-        <Logo />
+        <Logo/>
         <Nav />
       </header>
       <aside>
