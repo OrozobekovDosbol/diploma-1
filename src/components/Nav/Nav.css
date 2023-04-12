@@ -6,6 +6,7 @@
 }
 .Nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .Nav ul li {
   list-style-type: none;

@@ -16,6 +16,10 @@
 }
 .Layout aside {
   grid-area: aside;
+  background-color: rgb(203, 198, 198);
+  width: 200px;
+  border-radius: 20px;
+  padding: 20px;
 }
 .Layout main {
   grid-area: main;

@@ -6,12 +6,13 @@ import { getFirestore, collection } from 'firebase/firestore/lite'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAvD-Mibl5oCNamSOEEXcaIvUmvvmNRmIk",
-  authDomain: "diploma-1-91d6a.firebaseapp.com",
-  projectId: "diploma-1-91d6a",
-  storageBucket: "diploma-1-91d6a.appspot.com",
-  messagingSenderId: "388157581568",
-  appId: "1:388157581568:web:e9332d55a8a407f83e2be5"
+  apiKey: "AIzaSyBksJlRvPL_2C8VIVlkmWbQGXCReV8wB1o",
+  authDomain: "diplom-1-b6b30.firebaseapp.com",
+  databaseURL: "https://diplom-1-b6b30-default-rtdb.firebaseio.com",
+  projectId: "diplom-1-b6b30",
+  storageBucket: "diplom-1-b6b30.appspot.com",
+  messagingSenderId: "62749632246",
+  appId: "1:62749632246:web:a591d53be89e0675c9aed7"
 };
 
 
@@ -23,4 +24,4 @@ const db = getFirestore(app);
 
 
 
-export const categories = collection(db, 'categories')
+export const categoriesCollection = collection(db, 'categories')
