@@ -23,5 +23,6 @@ const db = getFirestore(app);
 
 
 
+export const categoriesCollection = collection(db, 'categories');
 
-export const categoriesCollection = collection(db, 'categories')
+export const productsCollection = collection(db, 'products');

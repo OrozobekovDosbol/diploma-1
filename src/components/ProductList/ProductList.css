@@ -1,0 +1,25 @@
+.ProductList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ProductList .Product {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  border: 2px black solid;
+  margin: 5px;
+}
+.ProductList .Product a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.ProductList .Product span {
+  color: rgb(70, 70, 70);
+  text-decoration: underline;
+}
+
+.ProductList .Product img {
+  max-width: 100%;
+  border-bottom: 1px black solid;
+}
