@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 .ProductList {
   display: flex;
   flex-wrap: wrap;
@@ -15,8 +16,10 @@
   color: black;
 }
 .ProductList .Product span {
-  color: rgb(70, 70, 70);
-  text-decoration: underline;
+  color: rgb(126, 126, 126);
+  font-weight: 600;
+  font-size: 25px;
+  font-family: 'Dongle', sans-serif;
 }
 
 .ProductList .Product img {
