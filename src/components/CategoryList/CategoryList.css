@@ -2,17 +2,29 @@
   padding: 0;
 }
 .CategoryList li a {
-  color: black;
+  color: rgb(168 87 56);
   text-decoration: none;
-  margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .CategoryList li {
   list-style-type: none;
   display: flex;
 }
-.CategoryList li:hover {
-  background-color: rgb(41, 134, 134);
-  border-radius: 10px;
+.CategoryList li a:hover {
+  color: rgb(168 87 56);
+  transform: scale(1.05);
+}
+
+.CategoryList h3 {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  background-color: rgb(168 87 56);
+  font-weight: 600;
+  font-family: 'Signika Negative', sans-serif;
+  border-radius: 15px 15px 0 0 ;
 }
