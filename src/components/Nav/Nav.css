@@ -21,3 +21,6 @@
   padding: 10px 50px;
   text-decoration: none;
 }
+.Nav ul li a:hover {
+  color: rgb(168 87 56);
+}
