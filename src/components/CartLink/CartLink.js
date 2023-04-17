@@ -14,7 +14,11 @@ export default function CartLink() {
   return (
     <div  className="CartLink">
       <NavLink to="/cart">
-        Cart ({total})
+        <div className="myCart">
+          <img src="https://svgsilh.com/svg/306793.svg" alt="logo-cart" className="cartLogo"/> 
+          <p>My cart</p>
+        </div>
+        <span>Number of goods: {total}</span>
       </NavLink>
     </div>
   )
