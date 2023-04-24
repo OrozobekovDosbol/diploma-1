@@ -3,12 +3,13 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
-import { categoriesCollection, productsCollection } from './firebase';
+import { categoriesCollection, onAuthChange, productsCollection } from './firebase';
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
+import ThankYou from "./pages/ThankYou";
 
 export const AppContext = createContext({
   categories: [],
@@ -16,6 +17,8 @@ export const AppContext = createContext({
   // контекст для корзины
   cart: {}, //содержимое корзинки
   setCart: () => {}, // изменить содержимое корзинки
+
+  user: null,
 })
 
 function App() {
@@ -25,8 +28,10 @@ function App() {
     return JSON.parse(localStorage.getItem('cart')) || {};
   });
 
+  const [user, setUser] = useState(null);
+
   useEffect (() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify('cart'));
   }, [cart]);
 
   useEffect(() => {
@@ -49,11 +54,15 @@ function App() {
           }))
         )
       })
+
+      onAuthChange(user => {
+        setUser(user);
+      })
   }, []);
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart }}>
+      <AppContext.Provider value={{ categories, products, cart, setCart, user}}>
         <Layout>
           <Routes>
             <Route path="/home" element={<Home />} />
@@ -62,8 +71,8 @@ function App() {
             <Route path="/contacts" element={<h1>Contacts</h1>} />
             <Route path="/delivery" element={<h1>Delivery</h1>} />
             <Route path="/categories/:slug" element={<Category />} />
-
             <Route path="/products/:slug" element={<Product /> } />
+            <Route path="thank-you" element={<ThankYou />} />
 
             <Route path="*" element={<NotFound />} />
 
