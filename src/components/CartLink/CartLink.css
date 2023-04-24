@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
 .CartLink .myCart .cartLogo {
-  width: 30px;
+  width: 20px;
 }
 .CartLink .myCart {
   display: flex;
@@ -8,6 +8,7 @@
 .CartLink .myCart p {
   color: rgba(0, 0, 0, 0.742);
   font-weight: 700;
+  font-size: 13px;
   font-family: 'Signika Negative', sans-serif;
 }
 .CartLink .myCart p:hover {
@@ -18,5 +19,8 @@
 }
 
 .CartLink span {
+  text-decoration: none;
   color: black;
+  font-size: 12px;
+  font-weight: 600;
 }

@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { categoriesCollection, onAuthChange, ordersCollection, productsCollection } from './firebase';
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
