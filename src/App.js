@@ -3,9 +3,8 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
-import { categoriesCollection, onAuthChange, ordersCollection, productsCollection } from './firebase';
+import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from './firebase';
 import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore/lite";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
@@ -28,7 +27,7 @@ function App() {
   const [products, setProducts] = useState([]);
   const[orders, setOrders] = useState([]);
   const [cart, setCart] = useState(() => {
-    return JSON.parse(localStorage.getItem('cart')) || {};
+    return JSON.parse(localStorage.getItem('')) || {};
   });
 
   const [user, setUser] = useState(null);
@@ -38,36 +37,16 @@ function App() {
   }, [cart]);
 
   useEffect(() => {
-    getDocs(categoriesCollection)
-      .then(({ docs }) => {
-        setCategories(
-          docs.map(doc => ({
-            ...doc.data(),
-            id: doc.id
-          }))
-        )
-      });
-
-      getDocs(productsCollection)
-      .then(({ docs }) => {
-        setProducts(
-          docs.map(doc => ({
-            ...doc.data(),
-            id: doc.id
-          }))
-        )
-      })
-      getDocs(ordersCollection)
-      .then(({ docs }) => {
-        setOrders(
-          docs.map(doc => ({
-            ...doc.data(),
-            id: doc.id
-          }))
-        )
-      })
+    onCategoriesLoad(setCategories);
+    onProductsLoad(setProducts);
+    onOrdersLoad(setOrders);
 
       onAuthChange(user => {
+        if (user) {
+          user.isAdmin = user && user.email === "orozobekovdosbol07@gmail.com";
+        }
+
+  
         setUser(user);
       })
   }, []);
