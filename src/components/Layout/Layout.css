@@ -1,6 +1,7 @@
 .Layout {
   display: grid;
-  grid-template-areas: "header header"
+  grid-template-areas:
+    "header header"
     "aside main"
     "footer footer";
   grid-template-columns: 1fr 3fr;
@@ -12,7 +13,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  box-shadow: 1px 91px 33px -53px rgba(135, 87, 56, 0.47) inset;
+  box-shadow: 1px 91px 33px -53px rgba(135, 87, 56, 0.47) inset;    
 }
 .Layout aside {
   margin-left: 15px;
@@ -20,7 +21,6 @@
   border: 2px solid rgb(168 87 56);
   width: 200px;
   border-radius: 20px;
-  height: 300px;
 }
 .Layout main {
   grid-area: main;
@@ -28,6 +28,12 @@
 .Layout footer {
   grid-area: footer;
   background-color: blanchedalmond;
+}
+
+@media (max-width: 550px) {
+  .Layout header > .Nav {
+    display: none;
+  }
 }
 
 
