@@ -10,22 +10,24 @@ export default function OrderList() {
   }
 
   const output = orders.map(order => {
+    if (!order.cart) return "Empty"
     const cartOutput = Object.keys(order.cart).map(productId => {
       const product = products.find(product => product.id === productId);
 
       if (!product) {
-        return "Product not found"
+        return 'Product not found'
       }
 
       return (
-        <div>
+        <div key={product.id}>  
+          <img src={product.picture} alt={product.name} />
           {product.name}: {order.cart[productId]} X {product.price} som = {order.cart[productId] * product.price} som
         </div>
       );
     })
 
     return (
-      <div className="Order">
+      <div key={order.id} className="Order">
         <div>Name: {order.name}</div>
         <div>Phone: {order.phone}</div>
         <div>Address: {order.address}</div>
