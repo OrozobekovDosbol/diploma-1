@@ -1,3 +1,7 @@
 .Logo img {
   width: 80px;
 }
+.Logo {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,15 @@
+.Auth span {
+  display: flex;
+  align-items: center;
+}
+.Auth .Sign {
+  background-color: rgb(168 87 56);
+  border-radius: 4px;
+  border: 1px solid;
+  font-size: 13px;
+  cursor: pointer;
+}
+.Auth .photoURL {
+  border-radius: 100%;
+  width: 30px;
+}

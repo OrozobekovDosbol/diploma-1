@@ -10,6 +10,7 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
+import Contacts from "./pages/Contacts";
 
 export const AppContext = createContext({
   categories: [],
@@ -50,7 +51,7 @@ function App() {
         setUser(user);
       })
   }, []);
-
+ 
   return (
     <div className="App">
       <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
@@ -59,7 +60,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/cart" element={<Cart/>} />
             <Route path="/about" element={<About />} />
-            <Route path="/contacts" element={<h1>Contacts</h1>} />
+            <Route path="/contacts" element={<Contacts/>} />
             <Route path="/delivery" element={<h1>Delivery</h1>} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product /> } />
