@@ -8,6 +8,7 @@
   border: 1px solid;
   font-size: 13px;
   cursor: pointer;
+  color: #fff;
 }
 .Auth .photoURL {
   border-radius: 100%;
