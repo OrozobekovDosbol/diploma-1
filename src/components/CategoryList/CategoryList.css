@@ -1,3 +1,6 @@
+.CategoryList {
+  overflow: hidden;
+}
 .CategoryList ul {
   padding: 0;
 }
@@ -20,6 +23,7 @@
 }
 
 .CategoryList h3 {
+  color: #fff;
   margin: 0;
   position: relative;
   text-align: center;
