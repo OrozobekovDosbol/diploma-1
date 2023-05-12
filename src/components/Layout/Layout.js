@@ -7,6 +7,7 @@ import Auth from "../Auth/Auth";
 import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
 import { useState } from "react";
+import Footer from "../Footer/Footer";
 
 
 export default function Layout(props) {
@@ -24,14 +25,14 @@ export default function Layout(props) {
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
         <div className="CartLink-Auth">
           <CartLink />
-          <Auth />
         </div>
+        <Auth />
       </header>
       <aside>
         <CategoryList />
       </aside>
       <main>{props.children}</main>
-      <footer>FOOTER</footer>
+      <footer><Footer /></footer>
     </div>
   );
 }
