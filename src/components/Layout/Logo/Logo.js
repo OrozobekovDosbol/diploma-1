@@ -1,13 +1,14 @@
 import "./Logo.css";
 import logo from "../../../assets/logo.png";
 import Home from "../../../pages/Home";
+import { NavLink } from "react-router-dom";
 
 export default function Logo() {
   return (
     <div className="Logo">
-      <a href={<Home/>}>
+      <NavLink to="/">
         <img src={logo} alt="logo" className="logo" />
-      </a>
+      </NavLink>
     </div>
   );
 }

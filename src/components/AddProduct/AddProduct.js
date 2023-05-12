@@ -8,6 +8,7 @@ export default function AddProduct({ category }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
+  const [ description, setDescription ] = useState("");
 
   if (!user || !user.isAdmin) {
     return null;
@@ -38,6 +39,7 @@ export default function AddProduct({ category }) {
           category: category.id,
           name: name,
           price: Number(price),
+          description: description,
           picture: pictureUrl,
           slug: name.replaceAll(" ", "-").toLowerCase(),
         })
@@ -63,6 +65,17 @@ export default function AddProduct({ category }) {
             value={name}
             name="name"
             onChange={onChangeName}
+            required
+          />
+        </label>
+        <label>
+          Price:
+          <input
+            type="number"
+            value={price}
+            name="price"
+            onChange={onChangePrice}
+            min={0}
             required
           />
         </label>

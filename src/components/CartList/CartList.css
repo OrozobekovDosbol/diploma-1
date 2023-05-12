@@ -19,11 +19,10 @@
 }
 .CartList .CartItem button {
   background-color: transparent;
-  border: 2px solid black;
   cursor: pointer;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border: 0;
 }
 .CartList .CartItem .CartP   {
   color: #000000;
