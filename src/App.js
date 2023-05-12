@@ -57,7 +57,7 @@ function App() {
       <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
         <Layout>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart/>} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts/>} />
