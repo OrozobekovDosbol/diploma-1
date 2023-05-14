@@ -1,3 +1,14 @@
 .MainContacts img {
   width: 30px;
 }
+.Tel {
+  text-decoration: none;
+  color: black;
+  padding: 7px 0;
+}
+.Tel:hover {
+  color: rgb(168 87 56);
+}
+.directions-to-administrator a {
+  display: block;
+}
