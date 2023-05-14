@@ -8,7 +8,6 @@ export default function AddProduct({ category }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
-  const [ description, setDescription ] = useState("");
 
   if (!user || !user.isAdmin) {
     return null;

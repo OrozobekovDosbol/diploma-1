@@ -1,6 +1,5 @@
 import "./Logo.css";
 import logo from "../../../assets/logo.png";
-import Home from "../../../pages/Home";
 import { NavLink } from "react-router-dom";
 
 export default function Logo() {
