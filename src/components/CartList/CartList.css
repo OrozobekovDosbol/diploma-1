@@ -11,11 +11,8 @@
 .CartList .CartItem input {
   width: 30px;
 }
-.CartList .CartItem img {
+.CartList .CartItem .Cart_img{
   width: 100px;
-}
-.CartList .CartItem .krestik_img {
-  width: 30px;
 }
 .CartList .CartItem button {
   background-color: transparent;
