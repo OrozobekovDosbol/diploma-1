@@ -3,6 +3,13 @@ import "./MainContacts.css";
 export default function MainContacts() {
   return (
     <div className="MainContacts">
+      <div className="Contacts">
+          <h4>Contact</h4>
+          <p>123 furniture shop</p>
+          <p>City, Karakol</p>
+          <a href="tel:+996 500 92 37 37">+996 500 92 37 37</a>
+          <p>Email: orozobekovdosbol07@gmail.com</p>
+        </div>
       <a href="https://api.whatsapp.com/send?phone=996500923737" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
