@@ -6,27 +6,6 @@
   display: flex;
   color: black;
 }
-.CartLink .myCart p {
-  color: rgba(0, 0, 0, 0.742);
-  font-weight: 700;
-  font-size: 13px;
-  font-family: 'Signika Negative', sans-serif;
-}
-.CartLink .myCart p:hover {
-  color: black;
-}
 .CartLink a {
   text-decoration: none;
-}
-
-.CartLink span {
-  text-decoration: none;
-  color: black;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.CartLink-Auth {
-  display: flex;
-  align-items: center;
 }
