@@ -37,7 +37,7 @@ export default function CartList() {
           min={1}
           onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
-        <span>{(cart[product.id] * product.price).toFixed(2)} som</span>
+        <span>${(cart[product.id] * product.price).toFixed(2)}</span>
         <button onClick={() => onItemRemove(product)}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
