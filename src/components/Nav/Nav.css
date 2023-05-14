@@ -22,10 +22,13 @@
 }
 .Nav ul li {
   list-style-type: none;
+  color: rgb(168 87 56);
+  transition: 0.2s linear;
+  
 }
 .Nav ul li:hover {
-  transform: scale(1.2);
-  transition: 200ms ease all;
+  transition: 100ms ease all; 
+  transform: scale(1.3);
   
 }
 .Nav ul li a {
