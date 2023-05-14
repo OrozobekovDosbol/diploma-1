@@ -8,6 +8,7 @@ export default function AddProduct({ category }) {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
+  const [description, setDescription] = useState("");
 
   if (!user || !user.isAdmin) {
     return null;
@@ -15,6 +16,9 @@ export default function AddProduct({ category }) {
 
   function onChangeName(event) {
     setName(event.target.value);
+  }
+  function onChangeDescription(event) {
+    setDescription(event.target.value);
   }
   function onChangePrice(event) {
     setPrice(event.target.value);
@@ -72,19 +76,18 @@ export default function AddProduct({ category }) {
           <input
             type="number"
             value={price}
-            name="price"
+            name="description"
             onChange={onChangePrice}
-            min={0}
             required
           />
         </label>
         <label>
-          Price:
+          Description:
           <input
-            type="number"
-            value={price}
+            type="text"
+            value={description}
             name="price"
-            onChange={onChangePrice}
+            onChange={onChangeDescription}
             min={0}
             required
           />
