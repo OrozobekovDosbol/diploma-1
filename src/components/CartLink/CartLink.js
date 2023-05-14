@@ -15,7 +15,7 @@ export default function CartLink() {
     <div  className="CartLink">
       <NavLink to="/cart">
         <div className="myCart">
-          <img  src="https://svgsilh.com/svg/306793.svg" alt="logo-cart" className="cartLogo"/> ({total})
+          <img className="cartLogo" src="https://svgsilh.com/svg/306793.svg" alt="logo-cart"/> ({total})
         </div>
       </NavLink>
     </div>
