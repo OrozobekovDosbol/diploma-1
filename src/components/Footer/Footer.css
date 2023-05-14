@@ -13,6 +13,7 @@
 .footer-column {
   flex-basis: 25%;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .footer-column a {
@@ -49,16 +50,16 @@
 
 .footer-list li:hover {
   cursor: pointer;
-  color: #ff9900;
+  color: rgb(168 87 56);
 }
 
 .footer-column a:hover {
-  color: #ff9900;
+  color: rgb(168 87 56);
 }
 
 .network-icons .bi:hover {
   cursor: pointer;
-  color: #ff9900;
+  color: rgb(168 87 56);
 }
 
 @media screen and (max-width: 768px) {
