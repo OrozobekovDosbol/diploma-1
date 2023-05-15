@@ -25,6 +25,7 @@
 .Layout main {
   grid-area: main;
   padding: 30px;
+  min-height: 99vh;
 }
 .Layout footer {
   grid-area: footer;
