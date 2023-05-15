@@ -9,6 +9,7 @@ export default function AddProduct({ category }) {
   const [price, setPrice] = useState(0);
   const [picture, setPicture] = useState(null);
   const [description, setDescription] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!user || !user.isAdmin) {
     return null;
@@ -17,11 +18,11 @@ export default function AddProduct({ category }) {
   function onChangeName(event) {
     setName(event.target.value);
   }
-  function onChangeDescription(event) {
-    setDescription(event.target.value);
-  }
   function onChangePrice(event) {
     setPrice(event.target.value);
+  }
+  function onChangeDescription(event) {
+    setDescription(event.target.value);
   }
   function onChangePicture(event) {
     const file = event.target.files[0];
@@ -32,16 +33,17 @@ export default function AddProduct({ category }) {
     event.preventDefault();
 
     if (!picture) {
-      alert("Please upload an picture");
+      alert("Please upload an image");
       return;
     }
 
+    setIsSubmitting(true);
     uploadProductPhoto(picture)
       .then((pictureUrl) =>
         addDoc(productsCollection, {
           category: category.id,
           name: name,
-          price: Number(price),
+          price: price,
           description: description,
           picture: pictureUrl,
           slug: name.replaceAll(" ", "-").toLowerCase(),
@@ -49,11 +51,15 @@ export default function AddProduct({ category }) {
       )
       .then(() => {
         setName("");
-        setPrice(0);
+        setPrice("");
+        setDescription("");
         setPicture(null);
       })
       .catch((error) => {
         console.log("Failed to add product:", error);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
   }
 
@@ -72,22 +78,23 @@ export default function AddProduct({ category }) {
           />
         </label>
         <label>
-          Price:
-          <input
-            type="number"
-            value={price}
-            name="description"
-            onChange={onChangePrice}
-            required
-          />
-        </label>
-        <label>
           Description:
           <input
             type="text"
             value={description}
             name="price"
             onChange={onChangeDescription}
+            min={0}
+            required
+          />
+        </label>
+        <label>
+          Price:
+          <input
+            type="number"
+            value={price}
+            name="price"
+            onChange={onChangePrice}
             min={0}
             required
           />
@@ -101,7 +108,9 @@ export default function AddProduct({ category }) {
             required
           />
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Submitting..." : "Submit"}
+        </button>
       </form>
     </div>
   );
