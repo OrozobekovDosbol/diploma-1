@@ -78,17 +78,6 @@ export default function AddProduct({ category }) {
           />
         </label>
         <label>
-          Description:
-          <input
-            type="text"
-            value={description}
-            name="price"
-            onChange={onChangeDescription}
-            min={0}
-            required
-          />
-        </label>
-        <label>
           Price:
           <input
             type="number"
