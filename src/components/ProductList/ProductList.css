@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
 .ProductList {
   display: flex;
   flex-wrap: wrap;
@@ -10,11 +10,12 @@
   border: 1px black solid;
   margin: 5px;
   border-radius: 15px;
-    overflow: hidden;
+  overflow: hidden;
+  transition: 0.2s linear;
 }
 .ProductList .Product:hover {
-  box-shadow: -1px 1px 11px 3px rgba(53, 37, 1, 0.30);
-
+  box-shadow: -1px 1px 11px 3px rgba(53, 37, 1, 0.3);
+  transition: 150ms ease all;
 }
 .ProductList .Product a {
   text-decoration: none;
@@ -25,7 +26,7 @@
   color: rgb(126, 126, 126);
   font-weight: 600;
   font-size: 25px;
-  font-family: 'Dongle', sans-serif;
+  font-family: "Dongle", sans-serif;
 }
 
 .ProductList .Product img {
