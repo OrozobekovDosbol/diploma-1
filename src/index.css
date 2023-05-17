@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Product img {
+  width: 200px;
+  float: left;
+}
+.Product .AddToCart-product {
+  width: 200px;
+}

@@ -1,6 +1,26 @@
 .Nav .NavItem a {
   color: black;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
 }
+.NavItem a:after {
+  background-color: rgb(
+    168 87 56
+  ); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz--transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+.NavItem a:hover:after,
+  .NavItem a:focus:after {
+    width: 100%;
+  }
 .Nav .NavItem {
   margin: 0 auto;
 }
@@ -24,12 +44,10 @@
   list-style-type: none;
   color: rgb(168 87 56);
   transition: 0.2s linear;
-  
 }
 .Nav ul li:hover {
-  transition: 100ms ease all; 
+  transition: 500ms ease all;
   transform: scale(1.3);
-  
 }
 .Nav ul li a {
   font-size: 13px;
@@ -39,27 +57,4 @@
 }
 .Nav ul li a:hover {
   color: rgb(168 87 56);
-}
-
-@media (max-width: 550px) {
-  .NavItem a {
-    display: inline-block;
-    line-height: 1;
-    text-decoration: none; /* Убираем подчеркивание */
-    cursor: pointer;
-  }
-  .NavItem a:after {
-    background-color: rgb(168 87 56); /* Цвет линии при наведении на нее курсора мыши */
-    display: block;
-    content: "";
-    height: 2px; /* Высота линии */
-    width: 0%;
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz--transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
-  }
-  .NavItem a:hover:after,
-  .NavItem a:focus:after {
-    width: 100%;
-  }
 }

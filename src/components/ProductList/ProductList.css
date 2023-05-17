@@ -12,6 +12,7 @@
   border-radius: 15px;
   overflow: hidden;
   transition: 0.2s linear;
+  justify-content: space-between;
 }
 .ProductList .Product:hover {
   box-shadow: -1px 1px 11px 3px rgba(53, 37, 1, 0.3);

@@ -9,6 +9,7 @@
   font-size: 13px;
   cursor: pointer;
   color: #fff;
+  margin-left: 5px;
 }
 .Auth .photoURL {
   border-radius: 100%;

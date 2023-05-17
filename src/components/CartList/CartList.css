@@ -11,8 +11,19 @@
 .CartList .CartItem input {
   width: 30px;
 }
-.CartList .CartItem .Cart_img{
+.CartList .CartItem .Cart_img {
   width: 100px;
+}
+.CartList .CartItem .tovar-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.CartList .CartItem .tovar-box .tovar-block-1 {
+  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .CartList .CartItem button {
   background-color: transparent;
@@ -24,4 +35,6 @@
 .CartList .CartItem .CartP   {
   color: #000000;
   text-decoration: none;
+  width: 100%;
+  padding-left: 10px;
 }
