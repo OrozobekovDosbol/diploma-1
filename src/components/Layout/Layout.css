@@ -5,6 +5,7 @@
     "aside main"
     "footer footer";
   grid-template-columns: 1fr 4fr;
+  max-width: 1320px;
   margin: 0 auto;
 }
 .Layout header {
