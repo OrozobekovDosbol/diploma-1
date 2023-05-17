@@ -15,7 +15,8 @@ export default function ProductList({ category }) {
       <div key={product.id} className="Product">
         <div className="product-picture">
           <NavLink to={"/products/" + product.slug}>
-            <img src={product.picture} alt={product.name} />
+            <img src={product.picture}  alt={product.name} />
+            < hr />
             {product.name}
           </NavLink>
         </div>
