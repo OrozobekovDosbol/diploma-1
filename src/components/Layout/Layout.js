@@ -8,6 +8,7 @@ import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
 import { useState } from "react";
 import Footer from "../Footer/Footer";
+import Search from "../Search/Search";      
 
 
 export default function Layout(props) {
@@ -23,6 +24,7 @@ export default function Layout(props) {
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
+        <Search />
         <div className="CartLink-Auth">
           <CartLink />
         </div>
