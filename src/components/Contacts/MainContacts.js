@@ -4,12 +4,6 @@ export default function MainContacts() {
   return (
     <div className="MainContacts">
       <div className="Contacts">
-        <p>
-          Тел 24/7: 0 505 888-880 звонки с мобильного телефона бесплатны Email:
-          tabilga.com@gmail.com Дарек: Торговый комплекс «ТК» Табылга г.Бишкек,
-          проспект Жибек-Жолу №150 пересекает ул. Буденого, район Аламединского
-          рынка Бишкек
-        </p>
         <h4>Contact</h4>
         <p>123 furniture shop</p>
         <div className="directions-to-administrator">
