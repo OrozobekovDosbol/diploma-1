@@ -1,168 +1,64 @@
-.Home img {
+.Home {
+  background-color: #a8583826;
+  border-radius: 10px;
+  padding: 10px;
+}
+.Home .dop-product {
   width: 100%;
 }
-
-/* Общие стили */
-.MainHome *,
-.MainHome *:after,
-.MainHome *:before {
-  box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: '';
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.hover-text-one {
-  overflow: hidden;
-  margin: 0;
-  width: 100%;
-  list-style: none;
-  text-align: center;
-}
-
-.hover-text-one figure {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  overflow: hidden;
-  background: #527c82;
-  text-align: center;
-  cursor: pointer;
-  margin: 0;
-}
-
-.hover-text-one figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  opacity: 0.8;
-}
-
-.hover-text-one figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.hover-text-one figure figcaption::before,
-.hover-text-one figure figcaption::after {
-  pointer-events: none;
-}
-
-.hover-text-one figure figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.Home .product-Home {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
-.hover-text-one figure h3 {
-  word-spacing: 0.10em;
-  margin-bottom: 0.5em;
+.cushioned:hover,
+.cushioned-3:hover {
+  filter: brightness(0.8);
 }
-
-.hover-text-one figure p {
-  margin: 0;
-}
-
-/* Эффект при наведении */
-figure.effect-text-two figcaption::before {
-  position: absolute;
-  top: 0;
-  left: 0;
+.Home .cushioned-3 {
   width: 100%;
-  height: 100%;
-  background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
-  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
-  content: '';
-  opacity: 0;
-  -webkit-transform: translate3d(0, 50%, 0);
-  transform: translate3d(0, 50%, 0);
 }
 
-figure.effect-text-two h3 {
+.header1 {
+  position: relative;
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  transition: 500ms ease, transform 500ms ease;
+}
+
+.header-text {
   position: absolute;
   top: 50%;
-  left: 0;
-  width: 100%;
-  font-weight: 700;
-  color: #fff !important;
-  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
-  transition: transform 0.35s, color 0.35s;
-  -webkit-transform: translate3d(0, -50%, 0);
-  transform: translate3d(0, -50%, 0);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.436);
+  padding: 10px;
+  border-radius: 10px;
+}
+.header-text h1 {
+  margin: 0;
 }
 
-figure.effect-text-two figcaption::before,
-figure.effect-text-two p {
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+.header-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-figure.effect-text-two p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 2em;
-  width: 100%;
-  opacity: 0;
-  -webkit-transform: translate3d(0, 10px, 0);
-  transform: translate3d(0, 10px, 0);
+.header-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.header-image:hover {
+  opacity: 0.7;
 }
 
-figure.effect-text-two:hover h3 {
-  color: #fff;
-  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
-  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+.header-title:hover {
+  color: rgb(168 87 56);
 }
 
-figure.effect-text-two:hover figcaption::before,
-figure.effect-text-two:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-  .hover-text-one figure figcaption {
-    padding: 1.5em;
-  }
-
-  .hover-text-one figure h3 {
-    font-size: 1em;
-  }
-
-  .hover-text-one figure p {
-    font-size: 60%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hover-text-one figure figcaption {
-    padding: 1em;
-  }
-
-  .hover-text-one figure h3 {
-    font-size: 0.8em;
-  }
-
-  .hover-text-one figure p {
-    font-size: 50%;
-  }
+.header-subtitle:hover {
+  color: rgb(168 87 56);
 }
