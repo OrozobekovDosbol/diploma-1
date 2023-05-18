@@ -19,7 +19,7 @@
   font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid transparent; /* Добавлено */
-  transition: border-color 500ms ease, transform 500ms ease; /* Добавлено */
+  transition: 500ms ease, transform 500ms ease; /* Добавлено */
 }
 
 .CategoryList li a:hover {
