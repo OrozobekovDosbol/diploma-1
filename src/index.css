@@ -17,3 +17,6 @@ code {
 .Product .AddToCart-product {
   width: 200px;
 }
+.Product .product_img {
+  margin: 0 20PX 10PX 0;
+}
