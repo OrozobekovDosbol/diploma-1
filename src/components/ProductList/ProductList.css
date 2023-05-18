@@ -7,12 +7,20 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
-  border: 1px black solid;
+  border: 0.5px rgb(101, 101, 101) solid;
   margin: 5px;
   border-radius: 15px;
   overflow: hidden;
   transition: 0.2s linear;
   justify-content: space-between;
+}
+.ProductList .Product:hover {
+  filter: brightness(1.1);
+}
+@media (max-width: 768px) {
+  .ProductList {
+    justify-content: center;
+  }
 }
 .ProductList .Product:hover {
   box-shadow: -1px 1px 11px 3px rgba(53, 37, 1, 0.3);
@@ -32,9 +40,15 @@
 
 .ProductList .Product img {
   max-width: 100%;
-  border-bottom: 1px black solid;
+  border-bottom: 1px rgba(0, 0, 0, 0.34) solid;
 }
 
 .ProductList .product-picture {
   width: 200px;
+}
+.ProductList .product-picture p {
+  padding: 0 10px;
+}
+.ProductList .product-price {
+  padding: 0 10px 10px 10px;
 }
