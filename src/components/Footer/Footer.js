@@ -42,8 +42,6 @@ function Footer() {
         </div>
         <div className="footer-column">
           <h4 className="footer-heading">Contact</h4>
-          <p>123 furniture shop</p>
-          <p>City, Karakol</p>
           <div className="directions-to-administrator">
             <a className="Tel" target="_blank" rel="noreferrer" href="https://www.google.com/maps?q=42.499292,%2078.412108">Adress: Isa Kuchukova</a>
             <a className="Tel" target="_blank" rel="noreferrer" href="tel:+996 500 92 37 37">+996 500 92 37 37</a>
