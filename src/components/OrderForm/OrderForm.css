@@ -6,3 +6,9 @@
   width: 200px;
   padding: 0 200px ;
 }
+@media (max-width: 596px) {
+  .OrderForm {
+    width: 200px;
+    padding: 0;
+  }
+}
