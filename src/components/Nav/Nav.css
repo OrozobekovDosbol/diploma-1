@@ -35,7 +35,6 @@
 
 @media (max-width: 596px) {
   .Nav ul {
-    display: none;
     flex-direction: column;
     margin: 1rem 0;
   }

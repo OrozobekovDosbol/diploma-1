@@ -44,7 +44,7 @@
   padding: 10px 30px; 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 596px) {
   .Layout header > .Nav {
     display: none;
   }
