@@ -3,7 +3,12 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
-import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from './firebase';
+import {
+  onAuthChange,
+  onCategoriesLoad,
+  onOrdersLoad,
+  onProductsLoad,
+} from "./firebase";
 import { createContext, useEffect, useState } from "react";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
@@ -22,20 +27,21 @@ export const AppContext = createContext({
   setCart: () => {}, // изменить содержимое корзинки
 
   user: null,
-})
+});
 
 function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const[orders, setOrders] = useState([]);
+  const [orders, setOrders] = useState([]);
+
   const [cart, setCart] = useState(() => {
-    return JSON.parse(localStorage.getItem('')) || {};
+    return JSON.parse(localStorage.getItem("cart")) || {};
   });
 
   const [user, setUser] = useState(null);
 
-  useEffect (() => {
-    localStorage.setItem("cart", JSON.stringify('cart'));
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   useEffect(() => {
@@ -43,33 +49,33 @@ function App() {
     onProductsLoad(setProducts);
     onOrdersLoad(setOrders);
 
-      onAuthChange(user => {
-        if (user) {
-          user.isAdmin = user && user.email === "orozobekovdosbol07@gmail.com";
-        }
+    onAuthChange((user) => {
+      if (user) {
+        user.isAdmin = user && user.email === "orozobekovdosbol07@gmail.com";
+      }
 
-  
-        setUser(user);
-      })
+      setUser(user);
+    });
   }, []);
- 
+
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
+      <AppContext.Provider
+        value={{ categories, products, cart, setCart, user, orders }}
+      >
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<Cart/>} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contacts" element={<Contacts/>} />
+            <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/categories/:slug" element={<Category />} />
-            <Route path="/products/:slug" element={<Product /> } />
+            <Route path="/products/:slug" element={<Product />} />
             <Route path="thank-you" element={<ThankYou />} />
             <Route path="orders" element={<Orders />} />
 
             <Route path="*" element={<NotFound />} />
-
           </Routes>
         </Layout>
       </AppContext.Provider>
