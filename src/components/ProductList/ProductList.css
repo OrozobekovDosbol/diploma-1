@@ -41,6 +41,7 @@
 .ProductList .Product img {
   max-width: 100%;
   border-bottom: 1px rgba(0, 0, 0, 0.34) solid;
+  height: 200px;
 }
 
 .ProductList .product-picture {
