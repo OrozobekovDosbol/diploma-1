@@ -1,32 +1,97 @@
+import React from "react";
 import "./MainAbout.css";
+import CircleIcon from "../../assets/circle-fill.svg";
+import About_1 from "../../image/About-1.jpg";
+import AboutPhoto from "../../image/About-2.jpg"
 
 export default function MainAbout() {
   return (
-    <div className="About">
-      <h1>Our features and benefits</h1>
-      <div className="AboutContent">
-        <div className="box-1">
-          <h1>1</h1>
-          <p>Large-scale production and technological resources</p>
-          <span>
-            Own production areas on the territory of more than 60,000 m2
-          </span> <br />
-          <span>Modern park of automated equipment</span> <br />
-          <span>
-            Own lamination line and the ability to work with exclusive decors
-          </span> <br />
-          <span>Innovative production processes</span> <br />
+    <div className="company-info">
+      <div className="Main-About">
+        <div className="about-photo">
+          <img className="about-background" src={AboutPhoto} alt="About-2" />
+          <div className="about-text">
+            <h2>Welcome to Dos-Bol Furniture Store</h2>
+            <p>
+              Dos-Bol is your ultimate destination for premium furniture solutions.
+              We specialize in offering a wide range of high-quality furniture for
+              every space and style. Whether you're furnishing your home, office, or
+              any other environment, we have the perfect pieces to meet your needs.
+            </p>
+            <p>
+              At Dos-Bol, we take pride in curating a diverse collection of
+              furniture, carefully selected from renowned manufacturers and brands.
+              Our team of experts is dedicated to ensuring that every piece of
+              furniture meets our stringent standards of quality, durability, and
+              aesthetics.
+            </p>
+            <p>
+              We understand that each customer is unique, and we strive to provide
+              personalized service and tailored recommendations. Our knowledgeable
+              staff is always available to assist you in choosing the right
+              furniture that suits your taste and requirements.
+            </p>
+            <p>
+              Visit Dos-Bol Furniture Store today and discover the perfect furniture
+              pieces to transform your space into a haven of comfort, style, and
+              functionality.
+            </p>
+          </div>
         </div>
-        <div className="box-2">
-          <h1>2</h1>
-          <p>National Level Logistics</p>
-          <span>12 own regional offices total storage area over 50,000 m2</span> <br />
-          <span>Фutomated accounting, acceptance and shipment of products</span> <br />
-          <span>Вeliveries to all subjects of the Kyrgyz Republic</span> <br />
-          <span>Deliveries to the CIS countries</span> <br />
-          <span>The possibility of sending products by any mode of transport</span> <br />
+      </div>
+      <div className="elementor">
+        <div className="About-photo">
+          <img className="About-1" src={About_1} alt="About" />
+        </div>
+        <h2>Our team</h2>
+        <p>
+          We are a team of professional and skilled experts in all domestic
+          spheres. We offer a wide range of services and at the same time we are
+          always glad to help you with any unconventional household needs:
+        </p>
+        <div className="box-1">
+          <span>
+            <img src={CircleIcon} alt="Circle-icon" />
+          </span>
+          <span>exclusive designs;</span>
+        </div>
+        <div className="box-1">
+          <span>
+            <img src={CircleIcon} alt="Circle-icon" />
+          </span>
+          <span>decor elements</span>
+        </div>
+        <div className="box-1">
+          <span>
+            <img src={CircleIcon} alt="Circle-icon" />
+          </span>
+          <span>textile and interior;</span>
+        </div>
+        <div className="box-1">
+          <span>
+            <img src={CircleIcon} alt="Circle-icon" />
+          </span>
+          <span>enlightenment;</span>
+        </div>
+        <div className="box-1">
+          <span>
+            <img src={CircleIcon} alt="Circle-icon" />
+          </span>
+          <span>modern living rooms;</span>
+        </div>
+        <div className="box-1">
+          <span>
+            <img src={CircleIcon} alt="Circle-icon" />
+          </span>
+          <span>award-winning designers;</span>
+        </div>
+        <div className="box-1">
+          <span>
+            <img src={CircleIcon} alt="Circle-icon" />
+          </span>
+          <span>high-tech.</span>
         </div>
       </div>
     </div>
-  )
+  );
 }
