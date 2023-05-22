@@ -84,7 +84,7 @@
   }
 
   .footer-heading {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .footer-list li {
@@ -108,14 +108,14 @@
   }
 
   .footer-list li {
-    font-size: 8px;
+    font-size: 12px;
   }
   .footer-heading {
     font-size: 20px;
     margin-bottom: 15px;
   }
   .directions-to-administrator a {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
