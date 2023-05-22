@@ -18,6 +18,7 @@
 }
 .CartList .CartItem .Cart_img {
   width: 100px;
+  height: 100px;
 }
 .CartList .CartItem .tovar-box {
   display: flex;
