@@ -28,9 +28,6 @@
   margin-top: 15px;
   margin-left: 15px;
   grid-area: aside;
-  border: 2px solid rgb(168 87 56);
-  width: 200px;
-  border-radius: 20px;
 }
 .Layout main {
   grid-area: main;
