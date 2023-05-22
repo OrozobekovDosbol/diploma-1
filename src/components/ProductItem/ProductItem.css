@@ -16,10 +16,12 @@
 }
 .ProductItem .Product .block_img {
   max-width: 100px;
+  max-height: 100px;
 }
 .ProductItem .Product .block_img img {
   vertical-align: bottom;
-  width: 100%;
+  width: 100px;
+  height: 100px;
   align-self: start;
 }
 .ProductItem .Product p {
