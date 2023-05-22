@@ -43,7 +43,7 @@
 .Nav ul li a {
   font-size: 13px;
   font-weight: 500;
-  padding: 10px 50px;
+  padding: 10px 20px;
   text-decoration: none;
   transition: border-color 500ms ease, transform 500ms ease-in; /* Добавлено */
 }
