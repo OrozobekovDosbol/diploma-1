@@ -10,9 +10,9 @@
   padding-bottom: 16px;
 }
 .CartList .CartItem input {
+  text-align: center;
   width: 20px;
   height: 20px;
-  text-align: center;
   border-radius: 0;
   border: 1px solid black;
 }
@@ -27,9 +27,9 @@
 }
 .CartList .CartItem .tovar-box .tovar-block-1 {
   width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .CartList .CartItem button {
   background-color: transparent;
@@ -38,7 +38,7 @@
   height: 20px;
   border: 0;
 }
-.CartList .CartItem .CartP   {
+.CartList .CartItem .CartP {
   color: #000000;
   text-decoration: none;
   width: 100%;

@@ -24,7 +24,7 @@ export default function CartList() {
     };
 
     const handleDecrement = () => {
-      if (count > 0) {
+      if (count > 1) {
         setCount(count - 1);
         setCart({
           ...cart,
@@ -36,7 +36,7 @@ export default function CartList() {
     return (
       <div className="Product-counter">
         <button onClick={handleDecrement}>-</button>
-        <input type="text" value={count} min={1} readOnly />
+        <input type="text" value={count} readOnly/>
         <button onClick={handleIncrement}>+</button>
       </div>
     );
