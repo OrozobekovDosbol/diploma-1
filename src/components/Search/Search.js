@@ -2,6 +2,7 @@ import { useEffect, useContext, useState, useRef } from "react";
 import { AppContext } from "../../App";
 import ProductItem from "../ProductItem/ProductItem";
 import "./Search.css";
+import SearchIcon from "../../assets/search.svg";
 
 export default function Search() {
   const { products } = useContext(AppContext);
@@ -50,8 +51,9 @@ export default function Search() {
         value={searchTerm}
         onChange={handleSearch}
       />
+
       <span>
-        
+        <img className="Searcher" src={SearchIcon} alt="search" />
       </span>
       {searchTerm && searchResults.length === 0 && (
         <div className="NoResults">No results found</div>
