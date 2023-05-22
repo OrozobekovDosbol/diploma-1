@@ -1,5 +1,4 @@
 .Home {
-  background-color: #a8583826;
   border-radius: 10px;
   padding: 10px;
 }
@@ -57,10 +56,10 @@
 }
 @media (max-width: 670px) {
   .header-text .header-title {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .header-text .header-subtitle {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
   }
 }
 
