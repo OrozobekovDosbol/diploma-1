@@ -7,9 +7,9 @@ export default function CartLink() {
   const { cart } = useContext(AppContext);
 
   // вычислить количество товаров
-  const total = Object.values(cart).reduce(
+  const total = Object.values(cart).reduce (
     (acc, num) => acc + num, 0
-  ).toString();
+  );
 
   return (
     <div className="CartLink">
