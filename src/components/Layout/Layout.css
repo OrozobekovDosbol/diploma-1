@@ -45,6 +45,9 @@
   .Layout header > .Nav {
     display: none;
   }
+  .Layout header > .Search {
+    display: none;
+  }
 }
 
 .Layout container {
