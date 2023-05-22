@@ -4,7 +4,7 @@ export default function MainContacts() {
   return (
     <div className="MainContacts">
       <div className="Contacts">
-        <h4>Contact</h4>
+        <h1>Contact</h1>
         <p>123 furniture shop</p>
         <div className="directions-to-administrator">
           <a
