@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AppContext } from "../../App";
 import { NavLink } from "react-router-dom";
 import "./CartList.css";
@@ -6,19 +6,42 @@ import "./CartList.css";
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
 
-  function onQuantityChange(product, qty) {
-    setCart({
-      ...cart,
-      [product.id]: qty,
-    });
-  }
   function onItemRemove(product) {
     const newCart = { ...cart };
     delete newCart[product.id];
     setCart(newCart);
   }
 
-  // получить только ИД товаров в корзинке
+  const ProductCounter = ({ product }) => {
+    const [count, setCount] = useState(cart[product.id]);
+
+    const handleIncrement = () => {
+      setCount(count + 1);
+      setCart({
+        ...cart,
+        [product.id]: count + 1,
+      });
+    };
+
+    const handleDecrement = () => {
+      if (count > 0) {
+        setCount(count - 1);
+        setCart({
+          ...cart,
+          [product.id]: count - 1,
+        });
+      }
+    };
+
+    return (
+      <div className="Product-counter">
+        <button onClick={handleDecrement}>-</button>
+        <input type="text" value={count} min={1} readOnly />
+        <button onClick={handleIncrement}>+</button>
+      </div>
+    );
+  };
+
   const productIds = Object.keys(cart);
 
   const output = products
@@ -33,14 +56,7 @@ export default function CartList() {
             {product.name}
           </NavLink>
           <div className="tovar-block-1">
-            <input
-              type="number"
-              value={cart[product.id]}
-              min={1}
-              onChange={(event) =>
-                onQuantityChange(product, +event.target.value)
-              }
-            />
+            <ProductCounter product={product} />
             <span>${(cart[product.id] * product.price).toFixed(2)}</span>
             <button onClick={() => onItemRemove(product)}>
               <svg
