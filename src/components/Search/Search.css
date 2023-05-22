@@ -6,6 +6,8 @@
   max-height: 30px;
   white-space: nowrap;
   color: white;
+  display: flex;
+    align-items: center;
 }
 .Search ::placeholder {
   color: rgba(255, 255, 255, 0.628);
