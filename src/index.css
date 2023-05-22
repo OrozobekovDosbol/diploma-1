@@ -20,3 +20,16 @@ code {
 .Product .product_img {
   margin: 0 20PX 10PX 0;
 }
+
+.AddToCart button {
+  width: 100%;
+  background-color: rgb(168 87 56);
+  color: white;
+  cursor: pointer;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 10px;
+  padding: 10px;
+}
+.AddToCart button:active {
+  background-color: rgba(168, 88, 56, 0.842)  ;
+}
