@@ -26,12 +26,6 @@ export default function MainAbout() {
               aesthetics.
             </p>
             <p>
-              We understand that each customer is unique, and we strive to provide
-              personalized service and tailored recommendations. Our knowledgeable
-              staff is always available to assist you in choosing the right
-              furniture that suits your taste and requirements.
-            </p>
-            <p>
               Visit Dos-Bol Furniture Store today and discover the perfect furniture
               pieces to transform your space into a haven of comfort, style, and
               functionality.
