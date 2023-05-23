@@ -1,7 +1,7 @@
 .Drawer .content {
   background-color: #fffffffa;
   color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 260px;
   overflow: hidden;
 
@@ -11,14 +11,14 @@
   bottom: 0;
   z-index: 100;
   transform: translateX(-300px);
-  transition: transform .3s;
+  transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 1px 91px 33px -53px rgba(135, 87, 56, 0.47) inset; 
+  box-shadow: 1px 91px 33px -53px rgba(135, 87, 56, 0.47) inset;
 }
 .Drawer .backdrop {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, 0.3);
 
   position: fixed;
   top: 0;
@@ -43,4 +43,8 @@
   .Drawer .content {
     transform: translateX(-300px);
   }
-} 
+}
+
+.Drawer .backdrop .Logo-Nav:active {
+  display: none;
+}
