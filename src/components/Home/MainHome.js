@@ -13,7 +13,7 @@ export default function MainHome() {
 
         <div className="header-text">
           <h1 className="header-title">Welcome to our store</h1>
-          <p className="header-subtitle">You can buy home furniture from us</p>
+          <p className="header-subtitle">Let your home feel the style</p>
         </div>
       </div>
 
