@@ -20,6 +20,7 @@
 .footer-column a {
   text-decoration: none;
   color: #fff;
+  transition: 200ms linear;
 }
 
 .footer-heading {
@@ -118,7 +119,6 @@
     font-size: 12px;
   }
 }
-
 
 .footer .footer-column .network-icons svg {
   transition: 0.9s;

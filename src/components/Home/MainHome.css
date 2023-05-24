@@ -12,6 +12,7 @@
 .Home .dop-product {
   width: 98%;
   border-radius: 20px;
+  transition: 200ms linear;
 }
 .Home .product-Home {
   display: flex;
@@ -40,8 +41,8 @@
 .video video {
   object-fit: cover;
   width: 100%;
-   height: 50%;
-   border-radius: 20px;
+  height: 50%;
+  border-radius: 20px;
 }
 
 .header-image {
@@ -87,7 +88,7 @@
 }
 
 .header-subtitle {
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 .header-image:hover {
