@@ -33,3 +33,10 @@ code {
 .AddToCart button:active {
   background-color: rgba(168, 88, 56, 0.842);
 }
+
+.NotFound {
+  text-align: center;
+}
+.NotFound h1 {
+  color: red;
+}
