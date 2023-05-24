@@ -37,6 +37,14 @@
   margin-top: 30px;
   max-width: 100%;
 }
+
+@media (max-width: 700px) {
+  .company-info .elementor {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
 .company-info .elementor h2 {
   margin-top: 0;
 }
@@ -70,7 +78,6 @@
   background-size: cover;
   width: 50%;
 }
-
 
 .box-1 {
   display: flex;
