@@ -1,53 +1,61 @@
-.company-info .MainAbout img {
-  position: absolute;
+.company-info .Main-About .about-text {
+  margin-top: 11px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../image/About-2.jpg);
+  max-width: 100%;
+  height: 400px;
+  background-size: cover;
+  align-items: center;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
-.company-info h2 {
+
+.company-info .Main-About h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: white;
 }
 
-.company-info p {
-  font-size: 20.4px;
+.company-info .Main-About p {
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
+  color: white;
+  text-align: center;
+  background-color: rgba(151, 151, 151, 0.733);
+  padding: 10px;
 }
 .company-info .elementor {
+  display: flex;
   padding: 20px 0 8px 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  margin-top: 30px;
+  max-width: 100%;
 }
 .company-info .elementor h2 {
   margin-top: 0;
 }
-.company-info .elementor .About-photo {
-  width: 550px;
-  height: 400px;
-  float: right;
-  margin-left: 10px;
+.company-info .elementor .block-1 {
+  padding-right: 18px;
+  width: 50%;
 }
 .company-info .elementor .About-1 {
   float: right;
   width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .company-info .elementor div span img {
   width: 8px;
   margin-right: 8px;
   margin-top: 6px;
 }
-
-.Main-About {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.about-photo {
-  position: relative;
-  flex: 1;
-}
-
 .about-background {
   width: 100%;
   height: auto;
@@ -55,33 +63,18 @@
   opacity: 0.8;
 }
 
-.about-text {
-  position: absolute;
-  top: 47%;
-  left: 3.5%;
-  transform: translate(-2%, -47%);
-  background-color: rgba(255, 255, 255, 0.71);
-  padding: 20px;
-  text-align: center;
-}
-
-.elementor {
-  margin-top: 30px;
-}
-
 .About-photo {
   text-align: center;
   margin-bottom: 20px;
+  float: right;
+  background-size: cover;
+  width: 50%;
 }
 
-.About-1 {
-  height: auto;
-}
 
 .box-1 {
   display: flex;
   align-items: center;
-  margin-bottom: 7px;
 }
 
 .box-1 span:first-child {
@@ -93,46 +86,59 @@
   height: 20px;
 }
 
-@media (max-width: 1100px) {
-  .company-info p {
-    font-size: 11px;
+@media (max-width: 1000px) {
+  .company-info .Main-About h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .company-info .Main-About p {
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
   }
 }
 @media (max-width: 850px) {
-  .company-info h2 {
-    font-size: 18px;
-    font-weight: bold;
+  .company-info .Main-About h2 {
+    font-size: 15px;
     margin-bottom: 10px;
   }
-  .company-info p {
-    font-size: 8px;
+  .company-info .Main-About p {
+    font-size: 12px;
     line-height: 1.5;
     margin-bottom: 15px;
   }
 }
-@media (max-width: 550px) {
-  .company-info h2 {
+@media (max-width: 720px) {
+  .company-info .Main-About h2 {
     font-size: 13px;
-    font-weight: bold;
     margin-bottom: 10px;
   }
-  .company-info p {
-    font-size: 5px;
+  .company-info .Main-About p {
+    font-size: 10px;
     line-height: 1.5;
     margin-bottom: 15px;
   }
 }
-@media (max-width: 400px) {
-  .company-info h2 {
-    font-size: 6px;
-    font-weight: bold;
-    margin-bottom: 8px;
+@media (max-width: 600px) {
+  .company-info .Main-About h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
-  .company-info p {
-    font-size: 4px;
-    line-height: 1.3;
-    margin-bottom: 6px;
+  .company-info .Main-About p {
+    font-size: 9px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 300px) {
+  .company-info .Main-About h2 {
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .company-info .Main-About p {
+    font-size: 9px;
+    line-height: 1.5;
+    margin-bottom: 15px;
   }
 }
