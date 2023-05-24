@@ -10,11 +10,11 @@ export default function OrderForm() {
   const navigate = useNavigate();
 
   if (Object.keys(cart).length === 0) {
-    return "Your card is empty"
+    return "Your card is empty";
   }
 
   if (!user) {
-    return "Please login to create an order."
+    return "Please login to create an order.";
   }
 
   function onFormSubmit(event) {
@@ -23,29 +23,36 @@ export default function OrderForm() {
     const formData = new FormData(event.target);
 
     addDoc(ordersCollection, {
-      name: formData.get('name'),
-      phone: formData.get('phone'),
+      name: formData.get("name"),
+      phone: formData.get("phone"),
       user: user.uid,
-      address: formData.get('address'),
+      address: formData.get("address"),
       cart: cart,
-    })
-    .then(doc => {
+    }).then((doc) => {
       setCart({});
-      navigate('/thank-you');
-    })
+      navigate("/thank-you");
+    });
   }
 
   return (
     <form className="OrderForm" onSubmit={onFormSubmit}>
       <h2>Create an order</h2>
       <label>
-       <p>Name:</p> <input type="text" name="name" placeholder="Dosbol" required />
+        <p>Name:</p>{" "}
+        <input type="text" name="name" placeholder="Dosbol" required />
       </label>
       <label>
-        <p>Phone:</p> <input type="tel" name="phone" placeholder="+996500923737"  required />
+        <p>Phone:</p>{" "}
+        <input type="tel" name="phone" placeholder="+996500923737" required />
       </label>
       <label>
-        <p>Address:</p> <input type="text" name="address" placeholder="Ica Kuchukova #25" required />
+        <p>Address:</p>{" "}
+        <input
+          type="text"
+          name="address"
+          placeholder="Ica Kuchukova #25"
+          required
+        />
       </label>
       <button>Submit</button>
     </form>

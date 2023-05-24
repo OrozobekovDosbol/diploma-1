@@ -33,7 +33,10 @@ export default function MainHome() {
         </p>
       </div>
       <div className="product-Home">
-        <a className="product-a cush-1" href="/products/willow-ii-slipcovered-bench-queen-sleeper-sofa">
+        <a
+          className="product-a cush-1"
+          href="/products/willow-ii-slipcovered-bench-queen-sleeper-sofa"
+        >
           <img
             className="cushioned dop-product"
             src={cushioned}

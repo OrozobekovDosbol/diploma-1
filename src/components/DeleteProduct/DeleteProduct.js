@@ -3,7 +3,7 @@ import { AppContext } from "../../App";
 import { deleteDoc, doc } from "firebase/firestore";
 import { deleteObject, ref } from "firebase/storage";
 import { db, storage } from "../../firebase";
-import "./DeleteProduct.css"
+import "./DeleteProduct.css";
 
 export default function DeleteProduct({ product }) {
   const { user } = useContext(AppContext);

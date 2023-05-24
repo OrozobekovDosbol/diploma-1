@@ -36,7 +36,7 @@ export default function CartList() {
     return (
       <div className="Product-counter">
         <button onClick={handleDecrement}>-</button>
-        <input type="text" value={count} readOnly/>
+        <input type="text" value={count} readOnly />
         <button onClick={handleIncrement}>+</button>
       </div>
     );

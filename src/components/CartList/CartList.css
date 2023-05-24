@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 596px) {
-  .CartList .CartItem  {
+  .CartList .CartItem {
     flex-direction: column;
   }
   .CartList .CartItem .tovar-box {

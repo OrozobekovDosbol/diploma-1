@@ -36,7 +36,6 @@ export const productsCollection = collection(db, "products");
 
 export const ordersCollection = collection(db, "orders");
 
-
 const provider = new GoogleAuthProvider();
 export const logIn = () => signInWithPopup(auth, provider);
 export const logOut = () => signOut(auth);

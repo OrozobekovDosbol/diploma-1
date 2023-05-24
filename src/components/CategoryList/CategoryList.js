@@ -1,4 +1,4 @@
-import "./CategoryList.css"
+import "./CategoryList.css";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../../App";
@@ -10,9 +10,7 @@ export default function CategoryList() {
 
   const output = categories.map((category) => (
     <li key={category.id}>
-      <NavLink to={`/categories/${category.slug}`}>
-        {category.name}
-      </NavLink>
+      <NavLink to={`/categories/${category.slug}`}>{category.name}</NavLink>
 
       <DeleteCategory category={category} />
     </li>
@@ -21,7 +19,9 @@ export default function CategoryList() {
   return (
     <div className="CategoryList">
       <h3>Categories</h3>
-      <ul>{output} <AddCategory /></ul>
+      <ul>
+        {output} <AddCategory />
+      </ul>
     </div>
   );
 }

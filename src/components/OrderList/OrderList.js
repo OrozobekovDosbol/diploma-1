@@ -22,27 +22,28 @@ export default function OrderList() {
       return (
         <div className="Order-content" key={product.id}>
           <NavLink to={"/products/" + product.slug}>
-          <div className="Main-Order">
-            <div className="Order-picture">
-              <img src={product.picture} alt={product.name} />
+            <div className="Main-Order">
+              <div className="Order-picture">
+                <img src={product.picture} alt={product.name} />
+              </div>
+              <div className="Order-box-1">
+                <p>
+                  <strong>Name: </strong>
+                  {product.name}
+                </p>
+                <p>
+                  <strong>Amount: </strong>
+                  {order.cart[productId]}X
+                </p>
+                <p>
+                  <strong>The price of the product: </strong>${product.price}
+                </p>
+                <p>
+                  <strong>Total: </strong>$
+                  {order.cart[productId] * product.price}
+                </p>
+              </div>
             </div>
-            <div className="Order-box-1">
-              <p>
-                <strong>Name: </strong>
-                {product.name}
-              </p>
-              <p>
-                <strong>Amount: </strong>
-                {order.cart[productId]}X
-              </p>
-              <p>
-                <strong>The price of the product: </strong>${product.price}
-              </p>
-              <p>
-                <strong>Total: </strong>${order.cart[productId] * product.price}
-              </p>
-            </div>
-          </div>
           </NavLink>
         </div>
       );

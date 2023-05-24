@@ -9,18 +9,16 @@ export default function Category() {
   //получить список категорий из App
   const { categories } = useContext(AppContext);
 
-  const category = categories.find(
-    (category) => category.slug === params.slug
-  );
+  const category = categories.find((category) => category.slug === params.slug);
 
   if (!category) {
-    return <NotFound />
+    return <NotFound />;
   }
 
   return (
     <div className="Category">
       <h1>{category.name}</h1>
-      < ProductList category={category} />
+      <ProductList category={category} />
     </div>
   );
 }

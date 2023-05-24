@@ -5,7 +5,7 @@ import { categoryCollection } from "../../firebase";
 import { AppContext } from "../../App";
 
 export default function AddCategory() {
-  const {user} = useContext(AppContext);
+  const { user } = useContext(AppContext);
   const [category, setCategory] = useState("");
 
   if (!user || !user.isAdmin) {

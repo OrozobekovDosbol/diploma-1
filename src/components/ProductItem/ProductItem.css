@@ -30,7 +30,6 @@
 .ProductItem:nth-child(1) .Product {
   margin: 0;
   position: absolute;
-
 }
 .ProductItem:nth-child(2) .Product {
   margin-top: 105px;

@@ -8,8 +8,7 @@ import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
 import { useState } from "react";
 import Footer from "../Footer/Footer";
-import Search from "../Search/Search";      
-
+import Search from "../Search/Search";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -34,7 +33,9 @@ export default function Layout(props) {
         <CategoryList />
       </aside>
       <main>{props.children}</main>
-      <footer><Footer /></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

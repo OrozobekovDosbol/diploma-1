@@ -6,5 +6,5 @@ export default function Orders() {
       <h1>Orders</h1>
       <OrderList />
     </div>
-  )
+  );
 }
