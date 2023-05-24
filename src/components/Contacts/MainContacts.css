@@ -12,6 +12,9 @@
 .directions-to-administrator a {
   display: block;
 }
+.MainContacts .social-network {
+margin-bottom: 5px;
+}
 .MainContacts .social-network svg {
   transition: 0.9s;
 }

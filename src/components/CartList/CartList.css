@@ -47,3 +47,24 @@
 .Product-counter {
   background-color: rgb(218, 218, 218);
 }
+
+@media (max-width: 596px) {
+  .CartList .CartItem  {
+    flex-direction: column;
+  }
+  .CartList .CartItem .tovar-box {
+    flex-direction: column;
+  }
+  .CartList .CartItem .tovar-box .tovar-block-1 {
+    flex-direction: column;
+  }
+  .CartList .CartItem .CartP {
+    padding: 10px 0;
+  }
+  .CartList .CartItem .tovar-box .Product-counter {
+    margin: 12px 0;
+  }
+  .CartList .CartItem .tovar-box span {
+    margin: 12px 0;
+  }
+}

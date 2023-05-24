@@ -44,7 +44,3 @@
     transform: translateX(-300px);
   }
 }
-
-.Drawer .backdrop .Logo-Nav:active {
-  display: none;
-}
