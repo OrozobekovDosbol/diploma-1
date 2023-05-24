@@ -40,3 +40,9 @@ code {
 .NotFound h1 {
   color: red;
 }
+.ThankYou {
+  text-align: center;
+}
+.ThankYou img {
+  width: 100px;
+}
