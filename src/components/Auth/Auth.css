@@ -5,7 +5,7 @@
 .Auth .Sign {
   background-color: rgb(168 87 56);
   border-radius: 6px;
-  border: 1px solid white;
+  border: 0;
   font-size: 16px;
   cursor: pointer;
   color: #fff;
