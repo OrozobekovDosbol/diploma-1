@@ -1,7 +1,7 @@
 export default function ThankYou() {
   setTimeout(() => {
     window.location.href = "/";
-  }, 2000);
+  }, 500);
   return (
     <div className="ThankYou">
       <img
