@@ -96,7 +96,7 @@ export default function MainContacts() {
         allowFullScreen=""
         loading="lazy"
         title="Embedded Google Maps"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
   );
