@@ -3,6 +3,7 @@ import cushioned from "../../image/cushioned.jpg";
 import cushioned3 from "../../image/cushioned-3.jpg";
 import "./MainHome.css";
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 export default function MainHome() {
   return (
     <div className="Home">
@@ -33,23 +34,23 @@ export default function MainHome() {
         </p>
       </div>
       <div className="product-Home">
-        <a
+        <NavLink
           className="product-a cush-1"
-          href="/products/willow-ii-slipcovered-bench-queen-sleeper-sofa"
+          to="/products/willow-ii-slipcovered-bench-queen-sleeper-sofa"
         >
           <img
             className="cushioned dop-product"
             src={cushioned}
             alt="cushioned"
           />
-        </a>
-        <a className="product-a cush-3" href="/products/hague-mid-century-sofa">
+        </NavLink>
+        <NavLink className="product-a cush-3" to="/products/hague-mid-century-sofa">
           <img
             className="cushioned-3 dop-product"
             src={cushioned3}
             alt="cushioned-3"
           />
-        </a>
+        </NavLink>
       </div>
     </div>
   );
