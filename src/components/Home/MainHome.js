@@ -3,7 +3,7 @@ import cushioned from "../../image/cushioned.jpg";
 import cushioned3 from "../../image/cushioned-3.jpg";
 import "./MainHome.css";
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function MainHome() {
   return (
     <div className="Home">
@@ -44,7 +44,10 @@ export default function MainHome() {
             alt="cushioned"
           />
         </NavLink>
-        <NavLink className="product-a cush-3" to="/products/hague-mid-century-sofa">
+        <NavLink
+          className="product-a cush-3"
+          to="/products/hague-mid-century-sofa"
+        >
           <img
             className="cushioned-3 dop-product"
             src={cushioned3}
