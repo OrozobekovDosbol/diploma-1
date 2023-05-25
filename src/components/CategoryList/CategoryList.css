@@ -26,6 +26,7 @@
   text-decoration: none;
   padding: 10px 10px;
   font-size: 15px;
+  width: 100%;
   font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 1px solid transparent; /* Добавлено */
