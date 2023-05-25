@@ -8,7 +8,7 @@ export default function MainHome() {
   return (
     <div className="Home">
       <div className="video">
-        <video control autoPlay muted loop>
+        <video autoPlay muted loop>
           <source src={video_1} type="video/mp4" />
         </video>
 
